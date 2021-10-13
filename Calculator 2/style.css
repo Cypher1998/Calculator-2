@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  margin: 1rem;
+}
+
+.calculator {
+  max-width: 32rem;
+  margin: 1rem auto;
+  background: linear-gradient(to right bottom, #c8d331, #f09732);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 6%;
+  box-shadow: 2px 2px 3px 1px #222;
+}
+
+@media (min-width: 40rem) {
+  .calculator {
+    max-width: 35rem;
+  }
+}
+
+.calculator-input {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.calculator-input p {
+  font-size: 1.1rem;
+  color: #630505;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-input p {
+    font-size: 1.3rem;
+  }
+}
+
+.calculator-results {
+  text-align: right;
+  height: 100px;
+}
+
+.calculator-results h2 {
+  padding-right: 0.5rem;
+  color: #a00e2b;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-results h2 {
+    font-size: 2.3rem;
+  }
+}
+
+.calculator-extra {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-extra {
+    grid-gap: 1.5rem;
+  }
+}
+
+.calculator-extra__item {
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px 1px #222;
+  background: linear-gradient(to left top, #f46b45, #5e3108);
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+@media (min-width: 40rem) {
+  .calculator-extra__item {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+}
+
+.calculator-extra .clear {
+  background: #c70c0c;
+}
+
+.calculator-extra .delete {
+  background: #981313;
+  font-weight: normal;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+.calculator-button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 0.8rem 1rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-button {
+    grid-gap: 1rem 1.5rem;
+  }
+}
+
+.calculator-button__item {
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 1px #222;
+  background: linear-gradient(to left bottom, #ee3960, #f06135);
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-button__item {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+}
+
+.calculator-button .color {
+  background: linear-gradient(to left top, #f0b57e, #ff4b1f);
+  font-size: 1.3rem;
+  color: black;
+}
+
+.calculator-button .span {
+  grid-column: span 2;
+}
